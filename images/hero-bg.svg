@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 968.56 521.43">
+  <defs>
+    <style>
+      .e {
+        fill: url(#c);
+      }
+
+      .e, .f, .g, .h {
+        stroke-width: 0px;
+      }
+
+      .f {
+        fill: url(#b);
+      }
+
+      .g {
+        fill: url(#d);
+      }
+
+      .h {
+        fill: #fff;
+      }
+    </style>
+    <radialGradient id="b" cx="682.54" cy="177.15" fx="682.54" fy="177.15" r="232.51" gradientTransform="translate(-835.18 -155.52) scale(2.67 2.34)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3560bd" stop-opacity=".5"/>
+      <stop offset=".03" stop-color="rgba(53, 96, 189, .46)" stop-opacity=".46"/>
+      <stop offset=".2" stop-color="rgba(53, 96, 189, .3)" stop-opacity=".3"/>
+      <stop offset=".38" stop-color="rgba(53, 96, 189, .17)" stop-opacity=".17"/>
+      <stop offset=".57" stop-color="rgba(53, 96, 189, .07)" stop-opacity=".07"/>
+      <stop offset=".77" stop-color="rgba(53, 96, 189, .02)" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#3560bd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="c" cx="184.79" cy="611.98" fx="184.79" fy="611.98" r="232.51" gradientTransform="translate(-521.59 -461.82) scale(2.6 1.6)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3ddfcf" stop-opacity=".7"/>
+      <stop offset=".09" stop-color="rgba(59, 199, 203, .57)" stop-opacity=".57"/>
+      <stop offset=".22" stop-color="rgba(57, 167, 199, .4)" stop-opacity=".4"/>
+      <stop offset=".36" stop-color="rgba(55, 141, 195, .25)" stop-opacity=".25"/>
+      <stop offset=".5" stop-color="rgba(54, 121, 192, .14)" stop-opacity=".14"/>
+      <stop offset=".65" stop-color="rgba(53, 107, 190, .06)" stop-opacity=".06"/>
+      <stop offset=".81" stop-color="rgba(53, 98, 189, .02)" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#3560bd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="d" cx="219.05" cy="271.91" fx="219.05" fy="271.91" r="232.51" gradientTransform="translate(-250.73 -409.53) scale(2.7 1.54)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3ddfcf" stop-opacity=".4"/>
+      <stop offset="0" stop-color="rgba(60, 220, 206, .39)" stop-opacity=".39"/>
+      <stop offset=".18" stop-color="rgba(58, 175, 200, .25)" stop-opacity=".25"/>
+      <stop offset=".37" stop-color="rgba(55, 140, 195, .14)" stop-opacity=".14"/>
+      <stop offset=".56" stop-color="rgba(54, 115, 191, .06)" stop-opacity=".06"/>
+      <stop offset=".76" stop-color="rgba(53, 100, 189, .02)" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#3560bd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect class="h" x="-6.19" y="-4.13" width="980.94" height="529.68"/>
+  <ellipse class="f" cx="986.94" cy="259.57" rx="620.71" ry="544.82"/>
+  <ellipse class="e" cx="-41.04" cy="517.73" rx="604.64" ry="372.16"/>
+  <ellipse class="g" cx="340.2" cy="8.25" rx="627.25" ry="357.25"/>
+</svg>

@@ -23,49 +23,84 @@
             <div class="header-inner">
                 <a href="index.html" class="logo">
                     <div class="logo-container">
-                        <img src="images/main-logo-03.svg" class="logo-img" alt="SEOtraction logo">
+                        <img src="images/logo.svg" class="logo-img" alt="SEOtraction logo">
                     </div>
                 </a>
 
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
                         <li class="has-dropdown">
-                            <a href="services.html">
+                            <a href="#">
                                 Services <i class="fas fa-chevron-down dropdown-icon"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="seo.html">
-                                        <i class="fas fa-search"></i>
+                                    <a href="services.html">
+                                        <i class="fas fa-search-dollar"></i>
                                         <div>
-                                            <h4>SEO Optimization</h4>
+                                            <h4>SEO Services</h4>
                                             <p>Boost your visibility in search results.</p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="content.html">
-                                        <i class="fas fa-pen-nib"></i>
+                                    <a href="services.html">
+                                        <i class="fas fa-project-diagram"></i>
                                         <div>
-                                            <h4>Content Creation</h4>
-                                            <p>Engaging and SEO-friendly content.</p>
+                                            <h4>Link Building</h4>
+                                            <p>Contextual backlinks from relevant, high-authority sites.</p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="analytics.html">
-                                        <i class="fas fa-chart-line"></i>
+                                    <a href="services.html">
+                                        <i class="fas fa-edit"></i>
                                         <div>
-                                            <h4>Analytics</h4>
-                                            <p>Understand your performance.</p>
+                                            <h4>Content Marketing</h4>
+                                            <p>Strategy, creation, and promotion of blog content.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services.html">
+                                        <i class="fas fa-keyboard"></i>
+                                        <div>
+                                            <h4>Copywriting</h4>
+                                            <p>Blogs, product copy, landing pages—delivered fast.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services.html">
+                                        <i class="fas fa-link"></i>
+                                        <div>
+                                            <h4>Guest Posting</h4>
+                                            <p>Authority placements with contextual backlinks.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services.html">
+                                        <i class="fas fa-bullhorn"></i>
+                                        <div>
+                                            <h4>Digital PR</h4>
+                                            <p>Media mentions, influencer outreach, and press coverage.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services.html">
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <div>
+                                            <h4>SEO Audits</h4>
+                                            <p>Deep audits: technical, on-page, speed, and competitors.</p>
                                         </div>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-
+                        <li><a href="about.html">About</a></li>
                         <li><a href="clients.html">Clients</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <a href="contact.html" class="btn btn-primary">Contact</a>
@@ -85,6 +120,30 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
+                <div class="hero-animations">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.1 318.1" class="animated-logo">
+                        <defs>
+                            <mask id="reveal-mask">
+                                <rect x="0" y="0" width="0" height="100%" fill="white">
+                                    <animate attributeName="width" values="0; 100%; 100%; 0; 0"
+                                        keyTimes="0; 0.25; 0.75; 0.95; 1" dur="7s" repeatCount="indefinite" />
+                                </rect>
+                            </mask>
+                        </defs>
+
+
+                        <!-- Your original paths, masked -->
+                        <g mask="url(#reveal-mask)">
+                            <path class="c" fill="var(--primary)"
+                                d="M226.97,203.09c12.11-12.11,11.41-32.27-2.1-43.45-11.78-9.75-29.24-8.29-40.05,2.52l-11.33,11.33h0s-11.94,11.94-11.94,11.94c-13.69,13.69-31.67,20.53-49.65,20.53s-35.96-6.84-49.65-20.53c-27.37-27.38-27.37-71.92,0-99.3l11.94-11.94c21.59-21.59,6.3-58.51-24.24-58.51h0c-18.93,0-34.27,15.35-34.27,34.27v218.19c0,18.93,15.35,34.27,34.27,34.27h63.49c9.09,0,17.81-3.61,24.24-10.04l89.29-89.29Z" />
+                            <path class="b" fill="#121212"
+                                d="M204.65,15.68c-9.09,0-17.81,3.61-24.24,10.04l-89.29,89.29c-11.45,11.45-11.45,30.09,0,41.54,11.45,11.45,30.09,11.45,41.54,0l11.94-11.94h0s10.89-10.89,10.89-10.89c27.02-27.01,71.02-28.73,98.82-2.53,28.89,27.23,29.4,72.9,1.52,100.78l-11.94,11.94c-21.59,21.59-6.3,58.51,24.24,58.51h0c18.93,0,34.28-15.35,34.28-34.28V49.96c0-18.93-15.35-34.27-34.27-34.27h-63.49Z" />
+                        </g>
+                    </svg>
+
+                    <h1 class="logo-text">Solvexa</h1>
+                </div>
+
                 <h1 class="hero-title">Data-Driven Growth For Ambitious Businesses</h1>
                 <p class="hero-subtitle">Ethical SEO & digital marketing strategies that deliver sustainable results,
                     not shortcuts.</p>
@@ -99,15 +158,17 @@
     <!-- Client Logos Section -->
     <section class="client-logos">
         <div class="container">
-            <p class="section-pre-title">Trusted by innovative companies</p>
+            <p class="section-pre-title">Trusted by ambitious brands</p>
             <div class="section-header">
-                <h2 class="section-title">Stand out from the crowd like <span>our clients</span> </h2>
-                <p class="section-description">From digital PR and link building to content marketing and fully-managed
-                    SEO services, our campaigns are carefully crafted to empower you to achieve your organic goals –
-                    just like the many world-renowned brands our SEO agency has helped throughout the years. Join the
-                    ranks with some of the most exciting brands in the world, and let us give you the organic growth
-                    your business deserves.</p>
+                <h2 class="section-title">Grow organically like <span>our clients</span></h2>
+                <p class="section-description">
+                    From strategic digital PR and ethical link building to high-impact content and technical SEO,
+                    Solvexa delivers campaigns built for long-term visibility and trust. We’ve helped startups,
+                    agencies, and enterprise-level brands achieve powerful organic growth—and we’re ready to do the same
+                    for you. Partner with Solvexa and rise above the competition.
+                </p>
             </div>
+
             <div class="logos-grid">
                 <div class="client-logo-wrapper">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stripe.svg" alt="Fintech Solutions"
@@ -139,9 +200,12 @@
     <section class="about-section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Premium Digital Marketing Without <span>The Smoke & Mirrors</span> </h2>
-                <p class="section-description">At SEOtraction, we combine cutting-edge technology with white-hat
-                    methodologies to deliver measurable growth.</p>
+                <h2 class="section-title">Results-Driven Digital Marketing Without <span>The Smoke & Mirrors</span></h2>
+                <p class="section-description">
+                    At Solvexa, we use ethical strategies and data-backed execution to drive real, transparent growth—no
+                    gimmicks, just results you can measure.
+                </p>
+
             </div>
 
             <div class="about-grid">
@@ -228,32 +292,33 @@
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"SEOtraction transformed our organic traffic within 6 months. Their ethical approach
-                            delivered sustainable results where other agencies failed."</p>
+                        <p>"Solvexa helped us unlock consistent, high-quality traffic. Their ethical SEO and content
+                            strategies outperformed every agency we've worked with before."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="" alt="Sarah Johnson">
+                        <img src="https://i.pravatar.cc/80?img=12" alt="Ahmed Khan">
                         <div>
-                            <h4>Sarah Johnson</h4>
-                            <p>CEO, Fintech Solutions</p>
+                            <h4>Ahmed Khan</h4>
+                            <p>Founder, Digital Pay</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"The transparency and regular reporting gave us complete confidence. Our organic conversions
-                            increased by 220% in the first year."</p>
+                        <p>"What stood out with Solvexa was their full transparency and measurable results. Within
+                            months, our organic leads more than tripled."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="" alt="Michael Chen">
+                        <img src="https://i.pravatar.cc/80?img=15" alt="Bilal Siddiqui">
                         <div>
-                            <h4>Michael Chen</h4>
-                            <p>CMO, SaaS Platform</p>
+                            <h4>Bilal Siddiqui</h4>
+                            <p>CMO, Nova Systems</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -272,53 +337,61 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
+                <!-- Logo & About -->
                 <div class="footer-col">
                     <a href="index.html" class="logo">
                         <div class="logo-container">
-                            <img src="images/footer-logo-04.svg" class="logo-img" alt="SEOtraction logo">
+                            <img src="images/logo.svg" class="logo-img" alt="Solvexa logo">
                         </div>
                     </a>
-                    <p>Ethical, data-driven digital marketing for ambitious businesses.</p>
+                    <p>Solvexa delivers ethical, results-focused digital marketing tailored to help brands grow with
+                        clarity and confidence.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
 
+                <!-- Services -->
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html#seo">SEO Services</a></li>
-                        <li><a href="services.html#link-building">Link Building</a></li>
-                        <li><a href="services.html#content-marketing">Content Marketing</a></li>
-                        <li><a href="services.html#copywriting">Copywriting</a></li>
-                        <li><a href="services.html#digital-pr">Digital PR</a></li>
+                        <li><a href="services.html">SEO Services</a></li>
+                        <li><a href="services.html">Link Building</a></li>
+                        <li><a href="services.html">Content Marketing</a></li>
+                        <li><a href="services.html">Copywriting</a></li>
+                        <li><a href="services.html">Guest Posting</a></li>
+                        <li><a href="services.html">Digital PR</a></li>
+                        <li><a href="services.html">SEO Audits</a></li>
                     </ul>
                 </div>
 
+                <!-- Company -->
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html">About Solvexa</a></li>
                         <li><a href="clients.html">Client Success</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
+                <!-- Contact -->
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> London, UK</li>
-                        <li><i class="fas fa-phone"></i> +44 20 1234 5678</li>
-                        <li><i class="fas fa-envelope"></i> hello@seotraction.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</li>
+                        <li><i class="fas fa-phone"></i> +92 312 1234 567</li>
+                        <li><i class="fas fa-envelope"></i> hello@solvexa.com</li>
                     </ul>
                 </div>
             </div>
 
+            <!-- Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2023 SEOtraction. All rights reserved.</p>
+                <p>&copy; 2025 Solvexa. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
