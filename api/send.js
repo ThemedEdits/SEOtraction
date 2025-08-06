@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 // ✅ Admin email template (simple and raw)
 function generateBrandedEmailTemplateForAdmin({ name, email, phone, company, website, service, message }) {
-  return `
+    return `
     <h2>New Contact Form Submission</h2>
     <p><strong>Name:</strong> ${name}</p>
     <p><strong>Email:</strong> ${email}</p>
@@ -18,7 +18,7 @@ function generateBrandedEmailTemplateForAdmin({ name, email, phone, company, web
 
 // ✅ User auto-reply email template (styled and branded)
 function generateBrandedEmailTemplateForUser({ name, message }) {
-  return `
+    return `
     <table cellpadding="0" cellspacing="0" width="100%" style="font-family: Arial, sans-serif; background-color: #f8fafc; padding: 30px 0;">
       <tr>
         <td align="center">
@@ -38,6 +38,8 @@ function generateBrandedEmailTemplateForUser({ name, message }) {
                 <blockquote style="border-left: 4px solid #4178F2; margin: 0; padding-left: 1rem; color: #334155; font-style: italic;">
                   ${message}
                 </blockquote>
+                <p style="font-size: 13px; color: #64748b;">
+                This is an automated message. Please do not reply.</p>
               </td>
             </tr>
 
@@ -58,53 +60,53 @@ function generateBrandedEmailTemplateForUser({ name, message }) {
 
 // ✅ API Handler
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method Not Allowed' });
-  }
+    if (req.method !== 'POST') {
+        return res.status(405).json({ error: 'Method Not Allowed' });
+    }
 
-  const { name, email, phone, company, website, service, message } = req.body;
+    const { name, email, phone, company, website, service, message } = req.body;
 
-  if (!name || !email || !message) {
-    return res.status(400).json({ error: 'Missing required fields' });
-  }
+    if (!name || !email || !message) {
+        return res.status(400).json({ error: 'Missing required fields' });
+    }
 
-  try {
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS,
-      },
-    });
+    try {
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: process.env.MAIL_USER,
+                pass: process.env.MAIL_PASS,
+            },
+        });
 
-    const adminHTML = generateBrandedEmailTemplateForAdmin({
-      name, email, phone, company, website, service, message,
-    });
+        const adminHTML = generateBrandedEmailTemplateForAdmin({
+            name, email, phone, company, website, service, message,
+        });
 
-    const userHTML = generateBrandedEmailTemplateForUser({
-      name, message,
-    });
+        const userHTML = generateBrandedEmailTemplateForUser({
+            name, message,
+        });
 
-    // ✅ Send to admin
-    await transporter.sendMail({
-      from: `"Website Contact" <${process.env.MAIL_USER}>`,
-      to: 'themed.edits.co@gmail.com',
-      replyTo: email,
-      subject: `New message from ${name}`,
-      html: adminHTML,
-    });
+        // ✅ Send to admin
+        await transporter.sendMail({
+            from: `"Website Contact" <${process.env.MAIL_USER}>`,
+            to: 'themed.edits.co@gmail.com',
+            replyTo: email,
+            subject: `New message from ${name}`,
+            html: adminHTML,
+        });
 
-    // ✅ Auto-reply to user
-    await transporter.sendMail({
-      from: `"Solvexa Support" <${process.env.MAIL_USER}>`,
-      to: email,
-      subject: `Thanks for contacting Solvexa!`,
-      html: userHTML,
-    });
+        // ✅ Auto-reply to user
+        await transporter.sendMail({
+            from: `"Solvexa Support" <${process.env.MAIL_USER}>`,
+            to: email,
+            subject: `Thanks for contacting Solvexa!`,
+            html: userHTML,
+        });
 
-    res.status(200).json({ success: true });
-  } catch (err) {
-    console.error('Email error:', err);
-    res.status(500).json({ error: 'Failed to send email' });
-  }
+        res.status(200).json({ success: true });
+    } catch (err) {
+        console.error('Email error:', err);
+        res.status(500).json({ error: 'Failed to send email' });
+    }
 }
