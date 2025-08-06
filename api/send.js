@@ -23,6 +23,7 @@ export default async function handler(req, res) {
     await transporter.sendMail({
       from: `"Website Contact" <${process.env.MAIL_USER}>`,
       to: 'themed.edits.co@gmail.com',
+      replyTo: email,
       subject: `New message from ${name}`,
       html: `
         <h2>New Contact Form Submission</h2>
