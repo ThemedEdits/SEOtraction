@@ -43,21 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (isValid) {
       // ✅ Submit to server using fetch
-      fetch('/send', {
+      fetch('/api/send', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: name.value.trim(),
-          email: email.value.trim(),
-          phone: phone.value.trim(),
-          company: company.value.trim(),
-          website: website.value.trim(),
-          service: service.value,
-          message: message.value.trim()
-        })
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phone, company, website, service, message })
       })
+
         .then(res => res.json())
         .then(data => {
           if (data.success) {
@@ -90,24 +81,24 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function showMessage(message, type = 'success') {
-  const popup = document.getElementById('popupMessage');
-  const popupText = document.getElementById('popupText');
-  const popupClose = document.getElementById('popupClose');
+    const popup = document.getElementById('popupMessage');
+    const popupText = document.getElementById('popupText');
+    const popupClose = document.getElementById('popupClose');
 
-  popupText.textContent = message;
+    popupText.textContent = message;
 
-  popup.classList.remove('success', 'error');
-  popup.classList.add('show', type);
+    popup.classList.remove('success', 'error');
+    popup.classList.add('show', type);
 
-  // Close on click
-  popupClose.onclick = () => {
-    popup.classList.remove('show');
-  };
+    // Close on click
+    popupClose.onclick = () => {
+      popup.classList.remove('show');
+    };
 
-  // Auto close after 5s
-  setTimeout(() => {
-    popup.classList.remove('show');
-  }, 5000);
-}
+    // Auto close after 5s
+    setTimeout(() => {
+      popup.classList.remove('show');
+    }, 5000);
+  }
 
 });
