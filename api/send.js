@@ -25,7 +25,7 @@ function generateBrandedEmailTemplateForUser({ name, message }) {
           <table width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);">
             <tr>
               <td style="background-color: #1e293b; padding: 20px 30px; text-align: center;">
-                <img src="https://solvexa-co.vercel.app/images/logo.svg" alt="Solvexa Logo" style="height: 40px; max-width: 180px; display: block; margin: auto;">
+                <img src="https://solvexa-co.vercel.app/public/images/logo.svg" alt="Solvexa Logo" style="height: 40px; max-width: 180px; display: block; margin: auto;">
                 <h1 style="color: #ffffff; margin: 10px 0 0; font-size: 18px;">Solvexa</h1>
               </td>
             </tr>
