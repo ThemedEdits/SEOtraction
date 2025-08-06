@@ -46,7 +46,16 @@ document.addEventListener('DOMContentLoaded', function () {
       fetch('/api/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, phone, company, website, service, message })
+        body: JSON.stringify({
+          name: name.value.trim(),
+          email: email.value.trim(),
+          phone: phone.value.trim(),
+          company: company.value.trim(),
+          website: website.value.trim(),
+          service: service.value,
+          message: message.value.trim()
+        })
+
       })
 
         .then(res => res.json())
